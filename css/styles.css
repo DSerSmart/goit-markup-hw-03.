@@ -1,0 +1,487 @@
+:root {
+  --title-text-color: #212121;
+  --primeri-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --primeri-wite-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --durk-background-color: #2f303a;
+  --mb: 94px;
+  --mb-h2: 50px;
+  --height-bt: 38px;
+}
+/*  box-sizing выравнивает элемент по ширине падинга и бордера */
+/* * { 
+  box-sizing: border-box;
+}*/
+/* Закрашуем первого ребёнка */
+/* .benefits-item:not(:first-child) {
+  background-color: tomato;
+} */
+/* Закрашиваем каждый второй начиная с первого */
+/* .benefits-item:nth-child(2n+1) {
+  background-color: tomato;
+}  */
+
+  
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primeri-text-color);
+  background-color: var(--primeri-wite-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.link1 {
+  text-decoration: none;
+}
+.lin1 {
+  list-style: none;
+}
+.link1 {
+  text-decoration: none;
+}
+.logo {
+  text-decoration: none;
+}
+.current:visited {
+  color: var(--accent-text-color);
+}
+a {
+  display: block;
+}
+
+.container {
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid rgb(238, 246, 9); */
+}
+
+img {
+  display: block;
+}
+/*-------------- Шапка сайта------------*/
+.header-container{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+ border-bottom:  1px solid #ECECEC;
+ }
+.header-list {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  
+}
+.header-conect {
+  /* display: flex; */
+  margin-left: auto;
+}
+.contact {
+  display: flex;
+}.header-item:not(:last-child){
+  margin-right: 50px;
+}
+.header-mail {
+  margin-right: 50px;
+}
+.header-tel {
+
+  padding-right: 200px;
+}
+
+
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  color: #2196f3;
+  margin-right: 93px;
+}
+.logo-span-black {
+  color: #000000;
+}
+.logo-span-wite {
+  color: #ffffff;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+link {
+  display: block;
+}
+.link1:hover,
+.link1:focus {
+  color: #757575;
+}
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #757575;
+}
+/* ---------------Герой------------ */
+.hero {
+  /* background-color: var(--durk-background-color); */
+  /* padding: 200px 452px 200px 452px; */
+}
+.container-hero {
+  box-sizing: border-box;
+  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid rgb(237, 4, 4); */
+  background-color: var(--durk-background-color);
+  /* margin: 0 auto; */
+  /* margin-bottom: var(--mb); */
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primeri-wite-color);
+  margin: 0 auto;
+ max-width:  696px;
+}
+
+.hero-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  margin: 30px auto 0px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+/*-------------- Приимущества------------*/
+.benefits-container {
+  margin-bottom: 0 auto;
+  padding: 94px 215px;
+
+}
+
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* перекидует список в столбик если не влазит */
+  /* flex-wrap: wrap; */
+  /* елемент заполняет всё пустое пространство */
+  /* flex-grow: 1; */
+  /* запрещает сжиматса елементу */
+  /* flex-shrink:0 ; */
+  /* меняет место елементо в право, у кого больше число тот правее */
+  /* order: 1; */
+
+}
+
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.benefits-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.benefits-p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primeri-text-color);
+  max-width: 270px;
+}
+
+/* ------------Чем мы занимаемся------------*/
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding-bottom: 50px;
+  margin: 0;
+}
+.occupation-container{
+padding: 0px 215px 94px;
+}
+.occupation-list {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: var(--mb); */
+}
+.team-h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.occupation-item {
+  margin-right: 30px;
+}
+/* ----------Наша команда---------- */
+.team-container {
+  padding: 94px 215px;
+  background: #F5F4FA;
+}
+.team-h2{
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -30px;
+}
+.team-item{
+  flex-basis: calc(100% / 4 - 30px);
+  width: calc((100% - 90px) / 4);
+  margin-left: 30px;
+  background: #FFFFFF;
+  /* outline: 1px solid rgb(237, 4, 4); */
+}
+.team-img{
+  margin-bottom: 30px;
+}
+.team-h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.team-p{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1,19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primeri-text-color);
+margin: 0;
+}
+/*--------------Footer------------*/
+/* .footer{
+  background-color: #2F303A;
+} */
+.footer-container {
+  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  padding-right: 0;
+  background-color: #2f303a;
+  /* outline: 1px solid rgb(4, 32, 240); */
+  margin: 0 auto;
+  background-color: #2F303A;
+}
+
+
+.logo-mb {
+  margin-bottom: 20px;
+}
+.footer-adress {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+.footer-mb {
+  margin-bottom: 30px;
+}
+.futer-contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  
+}
+.futer-contact1 {
+  margin-bottom: 9px;
+}
+
+/*--------------Портфолио Наввинатор------------*/
+.nav-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-button1 {
+  width: 73px;
+height:var(--height-bt);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primeri-wite-color);
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+}
+.bt2 {
+  width: 128px;
+height:var(--height-bt);
+}
+.bt3 {
+  width: 145px;
+height:var(--height-bt);
+}
+.bt4{
+  width: 103px;
+height:var(--height-bt);
+}
+.bt5{
+  width: 130px;
+height:var(--height-bt);
+}
+.nav-button{
+  margin-left: 8px;
+ margin-bottom: 56px;
+}
+.nav-button:hover,
+.nav-button:focus {
+  color: var(--primeri-wite-color);
+  background-color: var(--accent-text-color);
+}
+/*--------------Таблица картинок------------*/
+ .nav-container{ 
+  padding: 94px 215px;
+}
+.img-link{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.img-button {
+  flex-basis: calc(100% / 9 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+} 
+.img-button-h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--title-text-color);
+  padding-left: 24px;
+}
+.img-button-h2 {
+  color: var(--title-text-color);
+}
+.img-button{
+  width: 370px;
+height: 404px;
+left: 215px;
+top: 262px;
+
+}
+.border-img {
+  background: #FFFFFF;
+border: 1px solid #EEEEEE;
+/* box-sizing: border-box; */
+}
+ 
+.img-button-p {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--primeri-text-color);
+  text-decoration: none;
+  padding-left: 24px;
+}
+.uk {
+  color: rgb(0, 34, 255);
+}
+
+.in {
+  color: rgb(255, 251, 0);
+  margin-left: -3px;
+}
