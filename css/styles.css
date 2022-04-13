@@ -5,6 +5,11 @@
   --primeri-wite-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --durk-background-color: #2f303a;
+  --border-bottom:#ECECEC;
+  --background-color:#188ce8;
+  --border:#EEEEEE;
+  --in:rgb(255, 251, 0);
+  --uk: rgb(0, 34, 255);
   --mb: 94px;
   --mb-h2: 50px;
   --height-bt: 38px;
@@ -87,7 +92,7 @@ img {
 .header {
   display: flex;
   height: 82px;
-  border-bottom:  1px solid #ECECEC;
+  border-bottom:  1px solid var(--border-bottom);
 }
 .header .container{
   display: flex;
@@ -140,7 +145,7 @@ height: 31px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 .logo-span-black {
   color: #000000;
@@ -164,13 +169,13 @@ link {
 }
 .link1:hover,
 .link1:focus {
-  color: #757575;
+  color: var(--primeri-text-color);
 }
 .header-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #757575;
+  color: var(--primeri-text-color);
 }
 
 /* ---------------Герой------------ */
@@ -205,14 +210,14 @@ link {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--primeri-wite-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
   margin: 0 auto
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--background-color);
 }
 /*-------------- Приимущества------------*/
 
@@ -297,15 +302,12 @@ link {
   flex-basis: calc(100% / 3 - 30px);
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
-  background: #FFFFFF;
+  background: var(--primeri-wite-color);
 }
 /* ----------Наша команда---------- */
 
 .team{
-  background: #F5F4FA;
-}
-.team-h2{
-  margin-bottom: 50px;
+  background: var(--secondary-background-color);
 }
 .team-list {
    display: flex;
@@ -316,9 +318,9 @@ link {
   flex-basis: calc(100% / 4 - 30px);
   width: calc((100% - 90px) / 4);
   margin-left: 30px;
-  background: #FFFFFF;
+  background: var(--primeri-wite-color);
   /* outline: 1px solid rgb(237, 4, 4); */
-}
+} 
 .team-h3-p{
   padding: 30px 0px;
   
@@ -350,7 +352,7 @@ margin: 0;
       margin: 0 auto;
       padding-top: 60px;
       padding-bottom: 60px;
-      padding-left: 215px;
+      /* padding-left: 215px; */
 }
 .logo-mb {
   margin-bottom: 20px;
@@ -361,7 +363,7 @@ margin: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primeri-wite-color);
   margin-bottom: 9px;
 }
 .footer-mb {
@@ -396,8 +398,8 @@ margin: 0;
   justify-content: center;
 }
 .nav-button1 {
-  width: 73px;
-height:var(--height-bt);
+  /* width: 73px;
+height:var(--height-bt); */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -408,7 +410,7 @@ height:var(--height-bt);
   background-color: var(--accent-text-color);
   cursor: pointer;
 }
-.bt2 {
+/* .bt2 {
   width: 128px;
 height:var(--height-bt);
 }
@@ -423,9 +425,9 @@ height:var(--height-bt);
 .bt5{
   width: 130px;
 height:var(--height-bt);
-}
+} */
 .button-list {
-margin-left: 30px;
+margin-left: 8px;
 }
 /* .nav-button{
   margin-left: 8px;
@@ -455,10 +457,16 @@ margin-left: 30px;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--title-text-color);
-  padding-left: 24px;
+}
+.img-h2-p{
+  padding: 20px 24px;
+ border-left: 1px solid var(--border);
+ border-bottom: 1px solid var(--border);
+ border-right: 1px solid var(--border);
 }
 .img-button-h2 {
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .img-button{
   width: 370px;
@@ -467,8 +475,7 @@ left: 215px;
 top: 262px;
 }
 .border-img {
-  background: #FFFFFF;
-border: 1px solid #EEEEEE;
+  background: var(--primeri-wite-color);
 /* box-sizing: border-box; */
 }
 .img-button-p {
@@ -476,14 +483,11 @@ border: 1px solid #EEEEEE;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primeri-text-color);
-  text-decoration: none;
-  padding-left: 24px;
-}
+  text-decoration: none;}
 .uk {
-  color: rgb(0, 34, 255);
+  color: var(--uk) ;
 }
-
 .in {
-  color: rgb(255, 251, 0);
+  color: var(--in);
   margin-left: -3px;
 }
