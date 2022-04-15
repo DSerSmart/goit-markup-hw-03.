@@ -61,9 +61,6 @@ body {
 .current:visited {
   color: var(--accent-text-color);
 }
-a {
-  display: block;
-}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -430,14 +427,13 @@ margin-left: 8px;
 }
 /*--------------Таблица картинок------------*/
 .img-link{
-  display: block;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
 }
 .img-button {
-  flex-basis: calc(100% / 9 - 30px);
+    flex-basis: calc(100% / 9 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 } 
@@ -465,6 +461,7 @@ left: 215px;
 top: 262px;
 }
 .border-img {
+  display: block;
   background: var(--primeri-wite-color);
   width: 370px;
 /* box-sizing: border-box; */
