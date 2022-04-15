@@ -47,24 +47,14 @@ body {
   color: var(--primeri-text-color);
   background-color: var(--primeri-wite-color);
 }
-.list {
+.list ,
+.link,
+.link1
+ {
   list-style: none;
-}
-.link {
-  list-style: none;
-}
-.link {
   text-decoration: none;
 }
-.link1 {
-  text-decoration: none;
-}
-.lin1 {
-  list-style: none;
-}
-.link1 {
-  text-decoration: none;
-}
+
 .logo {
   text-decoration: none;
 }
@@ -83,6 +73,7 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .section{
   padding-top: 94px;
@@ -122,7 +113,8 @@ img {
 .contact {
   display: flex;
   align-items: center;
-}.header-item:not(:last-child){
+}
+.header-item:not(:last-child){
   margin-right: 50px;
 }
 .header-mail {
@@ -131,7 +123,6 @@ img {
 }
 .header-tel {
   flex-shrink:0
-
 }
 
 
@@ -278,9 +269,7 @@ link {
   color: var(--title-text-color);
   margin: 0;
   margin-bottom: 50px;
- 
 }
-
 .occupation-list {
   display: flex;
   justify-content: center;
@@ -323,7 +312,6 @@ link {
 } 
 .team-h3-p{
   padding: 30px 0px;
-  
 }
 .team-img{
 }
@@ -347,6 +335,7 @@ color: var(--primeri-text-color);
 margin: 0;
 }
 /*--------------Footer------------*/
+
 .footer{
   background-color: #2F303A;
       margin: 0 auto;
@@ -358,6 +347,7 @@ margin: 0;
   margin-bottom: 20px;
 }
 .footer-adress {
+  display: block;
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
@@ -378,7 +368,7 @@ margin: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .futer-contact1 {
-  margin-bottom: 9px;
+   margin-bottom: 9px;
 }
 /*--------------Портфолио Наввинатор------------*/
 
@@ -440,6 +430,7 @@ margin-left: 8px;
 }
 /*--------------Таблица картинок------------*/
 .img-link{
+  display: block;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -469,13 +460,13 @@ margin-left: 8px;
   margin-bottom: 4px;
 }
 .img-button{
-  width: 370px;
 height: 404px;
 left: 215px;
 top: 262px;
 }
 .border-img {
   background: var(--primeri-wite-color);
+  width: 370px;
 /* box-sizing: border-box; */
 }
 .img-button-p {
